@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int a,x,y,z=0;
+    printf("enter a number\n");
+    scanf("%d",&x);
+    a=x;
+    while(a!=0)
+    {
+                      //reverse number x
+       z=z*10;                        //step - 4
+       y=a%10;                        //step - 1
+       z=z+y;                         //step - 2
+       a=a/10;                       //step - 3
+    }
+    if(x==z)                          // compare after reverse if both (x and z) are same then number is PALINDROME
+        printf("%d is Palindrome",x);
+    else
+        printf("%d is not Palindrome",x);
+        return 0;
+}
